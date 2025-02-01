@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação de Atendimento</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Avaliação de Atendimento</h1>
+        <form id="avaliacaoForm">
+            <div id="step1" class="step active">
+                <div class="btn-group" id="satisfacao">
+                    <button type="button" data-value="5">😁 Excelente</button>
+                    <button type="button" data-value="4">🙂 Bom</button>
+                    <button type="button" data-value="3">😐 Regular</button>
+                    <button type="button" data-value="2">☹️ Ruim</button>
+                    <button type="button" data-value="1">😡 Péssimo</button>
+                </div>
+                <button type="button" id="nextStep">Próximo</button>
+            </div>
+            
+            <div id="step2" class="step">
+                <div class="btn-group" id="tempoAtendimento">
+                    <button type="button" data-value="rápido">⚡ Rápido</button>
+                    <button type="button" data-value="moderado">⏳ Moderado</button>
+                    <button type="button" data-value="demorado">🐢 Demorado</button>
+                </div>
+                <textarea id="comentario" name="comentario" placeholder="Escreva seu comentário aqui..."></textarea>
+                <button type="submit">Enviar Avaliação</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
